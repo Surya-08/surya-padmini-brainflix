@@ -1,0 +1,278 @@
+$primary-color: #323232;
+$primary-button: #0095ff;
+$button-text: white;
+$primary-label: #afafaf;
+$secondary-color: #000000;
+$button-hover: #0065ad;
+$divider: 1px solid #e1e1e1;
+$form-background: #fafafa;
+$primary-headline: 36px 16px 24px 16px;
+$primary-components: 24px;
+$secondary-headline: 24px 16px 16px 16px;
+$secondary-components: 16px;
+
+.brainflixLogo {
+  height: 25px;
+  width: 120px;
+}
+.headerSection {
+  padding: $primary-headline;
+  display: flex;
+  justify-content: space-between;
+}
+.container {
+  display: flex;
+  justify-content: space-around !important;
+}
+.headerform {
+  display: flex;
+  border: $divider;
+  border-radius: 4px;
+  vertical-align: middle;
+  margin: 0px 12px;
+}
+// Icons
+.brainflixIcons {
+  vertical-align: middle !important;
+  width: 16px;
+  height: 18px;
+  padding: 0px 12px;
+}
+.searchIcon {
+  margin: 11px 10px 11px 10px;
+}
+.content {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #323232;
+}
+.contentLeft {
+  width: fit-content;
+  border-right: $divider;
+  text-align: left;
+}
+.descriptionPadding {
+  display: flex;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  text-align: left;
+  padding: 20px 0px;
+}
+.brainflixHeader {
+  font-size: 33px;
+  line-height: 44px;
+  font-weight: 700;
+  padding-bottom: $secondary-components;
+  color: $primary-color;
+  margin-top: $primary-components;
+}
+input[type="search"] {
+  margin: 0;
+  font-size: 14px;
+  color: $primary-color;
+  border: none;
+  border-radius: 4px;
+}
+input[type="search"]:focus {
+  border: none;
+  outline: none;
+}
+.upload {
+  background: $primary-button;
+  height: 40px;
+  width: 150px;
+  border: none;
+  margin: 0px 12px;
+  border-radius: 4px;
+  color: #ffffff;
+  outline: none;
+}
+.upload:hover {
+  background: $button-hover;
+}
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0px 12px;
+}
+.videoContainer {
+  background-color: #000000;
+  padding-bottom: 24px;
+}
+.videoAspect {
+  width: 100%;
+  height: calc((60vw * 9) / 16);
+}
+.nextVideos {
+  font-size: 14px;
+  line-height: 22px;
+  padding: 24px 0 0 16px;
+  font-weight: 700;
+  text-align: left;
+  color: $primary-label;
+}
+.joinConvo {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  text-align: left;
+  color: $primary-label;
+}
+.commentSection {
+  display: flex;
+  justify-content: flex-start;
+  padding: 24px 0px 16px 0px;
+}
+
+.addComment {
+  height: 40px;
+  width: 320px;
+  border-radius: 4px;
+  border: $divider;
+  outline: none;
+}
+.verticalALignCenter {
+  vertical-align: middle;
+  align-content: center;
+}
+.secondContainer {
+  display: flex;
+  padding: 0px 16px 0px 16px;
+}
+.channelDetails {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 22px;
+  padding-bottom: $secondary-components;
+  font-weight: Regular 400;
+  border-bottom: $divider;
+  color: $primary-label;
+}
+.viewSection {
+  display: flex;
+  padding-right: 16px;
+}
+.channelAuthor {
+  display: flex;
+  justify-content: space-between;
+}
+.primaryText {
+  color: $primary-color;
+}
+.addCommentInput {
+  height: 40px;
+  width: 240px;
+  border-radius: 4px;
+  border: $divider;
+  outline: none;
+}
+.addCommentInput:focus {
+  border-color: $button-hover;
+}
+@media only screen and (min-width: 1280px) {
+  /* Desktop screens */
+  .addComment {
+    height: 40px;
+    width: 320px;
+    /* Adjust styles for 12 columns on desktop */
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  /* Tablet screens */
+  .addComment {
+    height: 40px;
+    width: 320px;
+    /* Adjust styles for 12 columns on desktop */
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* Mobile screens */
+  // .col-sm-12, .col-6 {
+  /* Adjust styles for 6 columns on mobile */
+  // }
+  .headerSection {
+    padding: $secondary-headline;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .headerform {
+    height: 36px;
+    width: 90%;
+    border: $divider;
+    margin: 8px;
+    border-radius: 4px;
+  }
+  .upload {
+    width: 50%;
+    margin: 0px px;
+  }
+  .brainflixHeader {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    // text-align: left;
+    padding-bottom: $secondary-components;
+    color: $primary-color;
+    margin-top: $secondary-components;
+  }
+  .contentLeft {
+    width: 100%;
+    border-right: none;
+    border-bottom: $divider;
+  }
+  .secondContainer {
+    display: block;
+  }
+  .commentSection {
+    display: block;
+    justify-content: center;
+  }
+  .channelAuthor {
+    display: block;
+    justify-content: space-between;
+    line-height: 18px;
+  }
+  .visibleComments {
+    border-top: 1px solid #e1e1e1;
+    display: flex;
+  }
+  .descriptionPadding {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    text-align: left;
+    padding: 16px 0px;
+  }
+  .viewSection {
+    display: block;
+    justify-content: space-between;
+    padding-right: 0px;
+  }
+  .joinConvo {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    text-align: left;
+    color: $primary-label;
+  }
+  .commentBox {
+    width: 100%;
+  }
+  .videoAspect {
+    width: 100%;
+    height: calc((60vw * 9) / 16);
+  }
+}
