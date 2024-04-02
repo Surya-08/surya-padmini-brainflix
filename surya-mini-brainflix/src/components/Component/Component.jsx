@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import styles from "../brain-flix.module.scss";
+import styles from "../../styles/partials/brain-flix.module.scss";
 import videosList from "../../data/videos.json";
 import videoDetails from "../../data/video-details.json";
 import LeftContent from "./LeftContent";

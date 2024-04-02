@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../brain-flix.module.scss";
+import styles from "../../styles/partials/brain-flix.module.scss";
 
 const RightContent = ({ handleNextVideo, filteredVideos }) => {
   return (

@@ -1,10 +1,9 @@
-import styles from "../brain-flix.module.scss";
-
 import React from "react";
 import logo from "../../assets/logo/BrainFlix-logo.svg";
 import search from "../../assets/Icons/search.svg";
 import upload from "../../assets/Icons/upload.svg";
 import picture from "../../assets/images/Mohan-muruge.jpg";
+import styles from "../../styles/partials/brain-flix.module.scss";
 
 const Header = () => {
   return (

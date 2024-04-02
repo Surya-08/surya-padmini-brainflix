@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../brain-flix.module.scss";
+import styles from "../../styles/partials/brain-flix.module.scss";
 import view from "../../assets/Icons/views.svg";
 import addComment from "../../assets/Icons/add_comment.svg";
 import favIcon from "../../assets/Icons/likes.svg";

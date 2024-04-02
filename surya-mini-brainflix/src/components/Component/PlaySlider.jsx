@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../brain-flix.module.scss";
+import styles from "../../styles/partials/brain-flix.module.scss";
 import Slider from "rc-slider";
 import "rc-slider/assets/index.css";
 
