@@ -77,8 +77,6 @@ const LeftContent = ({ currentValue }) => {
             onChange={(e) => e.target.value}
             className={`${styles.addComment} ${styles.addCommentInput}`}
           />
-        </div>
-        <div className={styles.verticalALignCenter}>
           <button
             type="submit"
             className={styles.upload}
@@ -92,6 +90,20 @@ const LeftContent = ({ currentValue }) => {
             COMMENT
           </button>
         </div>
+        {/* <div className={styles.verticalALignCenter}>
+          <button
+            type="submit"
+            className={styles.upload}
+            style={{ marginTop: "10px" }}
+          >
+            <img
+              src={addComment}
+              alt="addComment Sign"
+              className={styles.brainflixIcons}
+            />
+            COMMENT
+          </button>
+        </div> */}
       </div>
       {currentValue.comments.length > 0 &&
         currentValue.comments.map((elem) => (

@@ -29,6 +29,7 @@ $secondary-components: 16px;
   border: $divider;
   border-radius: 4px;
   vertical-align: middle;
+  background-color: $form-background;
   margin: 0px 12px;
 }
 // Icons
@@ -58,7 +59,7 @@ $secondary-components: 16px;
   line-height: 22px;
   font-weight: 400;
   text-align: left;
-  padding: 20px 0px;
+  padding: $secondary-components 0px;
 }
 .brainflixHeader {
   font-size: 33px;
@@ -100,7 +101,8 @@ input[type="search"]:focus {
 }
 .videoContainer {
   background-color: #000000;
-  padding-bottom: 24px;
+  position: relative;
+  // padding-bottom: 24px;
 }
 .videoAspect {
   width: 100%;
@@ -123,7 +125,7 @@ input[type="search"]:focus {
 }
 .commentSection {
   display: flex;
-  justify-content: flex-start;
+  justify-content: start;
   padding: 24px 0px 16px 0px;
 }
 
@@ -173,6 +175,22 @@ input[type="search"]:focus {
 .addCommentInput:focus {
   border-color: $button-hover;
 }
+.customVideoControls {
+  border-radius: 4px;
+  height: 25px;
+  padding: 2px 5px;
+  border: none;
+}
+.customSlider {
+  width: 100%;
+  display: flex;
+}
+.controlsDiv {
+  width: 750px;
+  position: absolute;
+  top: 390px;
+  transform: translateX(35%);
+}
 @media only screen and (min-width: 1280px) {
   /* Desktop screens */
   .addComment {
@@ -185,9 +203,25 @@ input[type="search"]:focus {
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
   /* Tablet screens */
   .addComment {
-    height: 40px;
+    height: 50px;
     width: 320px;
     /* Adjust styles for 12 columns on desktop */
+  }
+  .customVideoControls {
+    border-radius: 4px;
+    height: 25px;
+    padding: 2px 5px;
+    border: none;
+  }
+  .customSlider {
+    width: 100%;
+    display: flex;
+  }
+  .controlsDiv {
+    width: 450px;
+    position: absolute;
+    top: 230px;
+    transform: translateX(35%);
   }
 }
 
@@ -223,7 +257,6 @@ input[type="search"]:focus {
     font-size: 24px;
     line-height: 32px;
     font-weight: 700;
-    // text-align: left;
     padding-bottom: $secondary-components;
     color: $primary-color;
     margin-top: $secondary-components;
@@ -237,8 +270,8 @@ input[type="search"]:focus {
     display: block;
   }
   .commentSection {
-    display: block;
-    justify-content: center;
+    display: flex;
+    justify-content: start;
   }
   .channelAuthor {
     display: block;
@@ -268,11 +301,30 @@ input[type="search"]:focus {
     text-align: left;
     color: $primary-label;
   }
-  .commentBox {
-    width: 100%;
-  }
   .videoAspect {
     width: 100%;
     height: calc((60vw * 9) / 16);
+  }
+  .videoContainer {
+    background-color: #000000;
+    position: relative;
+  }
+  .controlsDiv {
+    width: 250px;
+    position: absolute;
+    top: 100px;
+    transform: translateX(25%);
+  }
+  .customVideoControls {
+    border-radius: 4px;
+    opacity: 0.5;
+    border: none;
+  }
+  .addCommentInput {
+    height: 100px;
+    width: 240px;
+    border-radius: 4px;
+    border: $divider;
+    outline: none;
   }
 }
