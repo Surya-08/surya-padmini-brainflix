@@ -1,4 +1,5 @@
 import "./App.scss";
+import { Route, Routes } from "react-router-dom";
 import Component from "./components/Component/Component";
 import Header from "./components/Component/Header";
 
@@ -7,7 +8,9 @@ const App = () => {
     <div className="App">
       <div data-testid="brain-flix-page">
         <Header />
-        <Component />
+        <Routes>
+          <Route path="/" element={<Component />} />
+        </Routes>
       </div>
     </div>
   );
