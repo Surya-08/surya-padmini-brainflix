@@ -105,6 +105,7 @@ input[type="search"]:focus {
   // padding-bottom: 24px;
 }
 .videoAspect {
+  position: relative;
   width: 100%;
   height: calc((60vw * 9) / 16);
 }
@@ -186,10 +187,11 @@ input[type="search"]:focus {
   display: flex;
 }
 .controlsDiv {
-  width: 750px;
+  display: flex;
+  align-items: center;
+  width: 100%;
   position: absolute;
-  top: 390px;
-  transform: translateX(35%);
+  bottom: 0;
 }
 @media only screen and (min-width: 1280px) {
   /* Desktop screens */
@@ -218,14 +220,14 @@ input[type="search"]:focus {
     display: flex;
   }
   .controlsDiv {
-    width: 450px;
+    width: 100%;
     position: absolute;
     top: 230px;
-    transform: translateX(35%);
+    // transform: translateX(35%);
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media (min-width: 340px) and (max-width: 640px) {
   /* Mobile screens */
   // .col-sm-12, .col-6 {
   /* Adjust styles for 6 columns on mobile */
@@ -303,6 +305,7 @@ input[type="search"]:focus {
   }
   .videoAspect {
     width: 100%;
+    position: relative;
     height: calc((60vw * 9) / 16);
   }
   .videoContainer {
@@ -310,10 +313,10 @@ input[type="search"]:focus {
     position: relative;
   }
   .controlsDiv {
-    width: 250px;
+    width: 100%;
     position: absolute;
-    top: 100px;
-    transform: translateX(25%);
+    // top: 100px;
+    // transform: translateX(25%);
   }
   .customVideoControls {
     border-radius: 4px;
